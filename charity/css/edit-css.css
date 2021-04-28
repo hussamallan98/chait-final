@@ -1,0 +1,414 @@
+@font-face {
+    font-family: myfont;
+    src: url(../Fonts/font1/AlegreyaSansSC-Thin.ttf);
+  }
+ @font-face {
+    font-family: myfont2;
+    src: url(../Fonts/font1/AlegreyaSansSC-Bold.ttf);
+  }
+body
+{
+    background-image: linear-gradient(to top,gray,white);
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.active
+{
+    background-color: rgb(150, 20, 11);
+    color:black;
+}  
+/*-----------------Nav BAR----------------*/
+.navbar
+{
+    width: 100%;
+    height:70px;
+    min-width: 660px;
+    background-color: black;
+    position: fixed;
+    padding: 0px;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 10px 10px 10x black;
+    -webkit-box-shadow: 10px 10px 10x black;
+    -webkit-moz-shadow: 10px 10px 10x black;
+
+}
+.logo
+{
+  margin-top: -24px;
+  padding-top: 10px;
+  padding-left: 50px;
+ height: 80px;   
+ transition: all .5s ease-in-out;
+ animation: heart 2s infinite ease-in-out;
+
+}
+@keyframes heart
+{
+0%,100%
+{
+    transform: scale(1);
+}
+50%
+{
+    transform: scale(1.1);
+}
+
+}
+
+.hvr-bounce-to-bottom
+{
+    padding-top:10px ;
+    font-family: myfont;
+    display:inline-block;
+    vertical-align:middle;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    box-shadow:0 0 1px rgba(0,0,0,0);
+    -webkit-box-shadow:0 0 1px rgba(0,0,0,0);
+    -moz-box-shadow:0 0 1px rgba(0,0,0,0);
+    position:relative;
+    -webkit-transition-property:color;
+    transition-property:color;
+    -webkit-transition-duration:.5s;
+    transition-duration:.5s;
+    width:12%;
+    border: none;
+    height: 100%;
+    background-color: none;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.562) ;
+}
+.hvr-bounce-to-bottom:before
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgb(150, 20, 11);
+    -webkit-transform:scaleY(0);
+    transform:scaleY(0);
+    -webkit-transform-origin:50% 0;
+    transform-origin:50% 0;
+    -webkit-transition-property:transform;
+    transition-property:transform;
+    -webkit-transition-duration:.5s;
+    transition-duration:.5s;
+    -webkit-transition-timing-function:ease-out;
+    transition-timing-function:ease-out
+}
+.hvr-bounce-to-bottom:active,.hvr-bounce-to-bottom:focus,.hvr-bounce-to-bottom:hover
+{
+    text-decoration: none;
+font-weight: bold;
+    color:black;
+}
+.hvr-bounce-to-bottom:active:before,.hvr-bounce-to-bottom:focus:before,.hvr-bounce-to-bottom:hover:before
+{
+    -webkit-transform:scaleY(1);
+    transform:scaleY(1);
+    -webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);
+    transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)
+}
+/*-----------------Nav BAR----------------*/
+
+
+
+/*-----------------profile----------------*/
+.profile
+{
+    padding-top:100px ;
+    text-align: center;
+    font-family: myfont2;
+}
+
+.profile img
+{
+    display: inline-block;
+    margin: -15px 8px 0px 8px;
+
+}
+.profile h1
+{
+    display: inline-block;
+    text-shadow: 3px 2px 5px black;   
+     -webkit-text-shadow: 3px 2px 5px black;
+     -moz-text-shadow: 3px 2px 5px black;
+    margin-bottom: 50px;
+    }
+
+/*-----------------profile----------------*/
+
+
+/*-----------------Body-------------------*/
+.editBody
+{
+    padding-top: 100px;
+    font-family: myfont2;
+    font-weight: bold;
+    padding-bottom: 100px;
+    perspective: 600px;
+}
+
+.right-body {
+  
+    height: 420px;
+    width: 450px;
+    background-color: #929292;
+    opacity: .8 ;
+    float: right;
+    margin-left: 20px;
+    box-sizing: border-box;
+    border-radius:0px 50px 0px 50px ;
+    padding:20px;
+    animation:left-right 10s infinite linear;
+    box-shadow: 6px 6px 22px black, -5px -4px 22px black;
+    color: black;
+    font-family: myfont2;
+    font-weight: bolder;
+    text-align: left;
+}
+@keyframes left-right
+{
+    0%,100%{
+        transform: rotateY(10deg);
+    }
+    50%{
+        transform: rotateY(-10deg) ;
+        
+
+    }
+}
+.newInput
+{
+
+
+height: 50px;
+display: block;
+margin: 20px;
+padding: 10px;
+border: none;
+border-bottom: 3px solid rgb(150, 20, 11);
+border-radius: 5px;
+font-family: myfont;
+font-weight: bold;
+letter-spacing: 3px;
+}
+
+.check
+{
+    width: 20px;
+    height: 20px;
+    border: none;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    border-radius: 50%;
+}
+*:focus {
+    outline: none;
+}
+
+.Save-button
+{
+    width: 540px;
+    height: 50px;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(150, 20, 11);
+    border-radius: 5px;  
+    transition: all .5s ease-in-out;
+    background-color: #929292;
+    opacity: .7;
+    color: black;
+    font-family: myfont2;
+    font-weight: bold;
+}
+.Save-button:hover
+{
+    background-color: black;
+    transform: translateY(15px);
+    color: white;
+    opacity: 1;
+    border:none ;
+    box-shadow: 6px 7px 20px rgb(150, 20, 11), -3px 1px 20px rgb(69, 68, 68);
+    letter-spacing: 10px;
+
+}
+
+.editBody img
+{
+    display: inline-block;
+    margin: -15px 8px 0px 8px;
+
+}
+.editBody h1
+{
+    display: inline-block;
+    text-shadow: 3px 2px 5px black;   
+     -webkit-text-shadow: 3px 2px 5px black;
+     -moz-text-shadow: 3px 2px 5px black;
+    margin-bottom: 50px;
+    }
+
+.E-title
+{
+    text-align: center;
+}
+/*-----------------Body-------------------*/
+
+
+
+/*-----------------Contact Us ----------------*/
+.contact-us
+{
+    border-top: 3px solid rgb(150, 20, 11);
+    padding: 30px 20px 20px 20px;
+    font-family: myfont2;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-top: 3px solid rgb(150, 20, 11);
+    color: white;
+
+}
+.c-title
+{
+margin:20px 0px  50px 0px;
+}
+.c-title img
+{
+    display: inline-block;
+    margin: -15px 8px 0px 8px;
+
+}
+.c-title h1
+{
+    display: inline-block;
+    text-shadow: 3px 2px 5px black;
+    -webkit-text-shadow: 3px 2px 5px black;
+    -moz-text-shadow: 3px 2px 5px black;
+
+
+}
+
+.info
+{
+    padding-top: 40px;
+    font-family: myfont;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.info img
+{
+
+    height: 70px;
+    position: relative;
+    left: -13px;
+    top: 7px;
+}
+.gmail,.phone
+{
+    background-color: #929292;
+    border-radius: 50px;
+    padding: 15px 15px 15px 5px;
+}   
+hr
+{
+    color: #929292;
+}
+
+.message
+{
+    width: 80% ;
+    height: auto;
+    text-align: left;
+}
+.contact-field
+{
+    display: block;
+    margin: 20px;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px ;
+}
+textarea
+{
+        display: block;
+        margin: 20px;
+        min-width: 600px;
+        min-height: 200px;
+        border-radius: 5px;
+        border: none;
+        padding: 10px ;
+}
+label
+{
+    display: inline-block;
+}
+.hvr-shutter-in-horizontal{
+    display:inline-block;
+    vertical-align:middle;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    box-shadow:0 0 1px rgba(0,0,0,0);
+    position:relative;
+    background:white;
+    -webkit-transition-property:color;
+    transition-property:color;
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s;
+    margin-top: 20px;
+    height:60px ;
+    width: 250px;
+    transition: all .2s ease-in-out;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: myfont2;
+    border-radius: 5px;
+    left: 20px;
+}
+.hvr-shutter-in-horizontal:before{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:black;
+    -webkit-transform:scaleX(1);transform:scaleX(1);
+    -webkit-transform-origin:50%;
+    transform-origin:50%;
+    -webkit-transition-property:transform;
+    transition-property:transform;
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s;
+    -webkit-transition-timing-function:ease-out;
+    transition-timing-function:ease-out
+}
+.hvr-shutter-in-horizontal:active,.hvr-shutter-in-horizontal:focus,.hvr-shutter-in-horizontal:hover
+{color:rgb(150, 20, 11)}
+.hvr-shutter-in-horizontal:active:before,.hvr-shutter-in-horizontal:focus:before,.hvr-shutter-in-horizontal:hover:before{
+    -webkit-transform:scaleX(0);
+    transform:scaleX(0)
+}
+/*-----------------Contact Us ----------------*/
